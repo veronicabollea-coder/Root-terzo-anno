@@ -198,7 +198,7 @@ void computeAcceptanceCosmics(unsigned int events = 1000,
     }
     sprintf(fileString,"longitView_l%d_w%d_sp%d_alpha%d.gif",(int)lengthX,(int)widthY,(int)spacingZ,(int)(alpha*10.));
     cl.SaveAs(fileString);
-    cl.Draw();
+    cl.Print();
     
     // best draw settings (maybe?)
     canvHor = 800;            canvVer = 800.;
@@ -219,7 +219,7 @@ void computeAcceptanceCosmics(unsigned int events = 1000,
     }
     sprintf(fileString,"transvView_l%d_w%d_sp%d_alpha%d.gif",(int)lengthX,(int)widthY,(int)spacingZ,(int)(alpha*10.));
     ct.SaveAs(fileString);
-    ct.Draw();
+    ct.Print();
   }
 
   // output histograms
