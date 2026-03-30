@@ -27,5 +27,6 @@ void graficoRate() {
     // --- DISEGNO ---
     gr->Draw("AP"); // A = assi, P = punti (+ barre)
 
-    c->Update();
+    c->Update()
+    c->Print();
 }
