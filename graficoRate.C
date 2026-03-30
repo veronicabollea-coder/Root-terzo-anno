@@ -2,7 +2,7 @@
 #include <TGraphErrors.h>
 #include <TAxis.h>
 
-void grafico_errori() {
+void graficoRate() {
 
     // --- DATI DI ESEMPIO ---
     const int N = 3;
@@ -21,7 +21,7 @@ void grafico_errori() {
     gr->SetMarkerColor(kBlue + 1);
 
     // --- CANVAS ---
-    TCanvas* c = new TCanvas("c", "Rate.vs.distanza", 800, 600);
+    TCanvas* c = new TCanvas("c", "Rate in funzione di d", 800, 600);
     c->SetGrid();
 
     // --- DISEGNO ---
