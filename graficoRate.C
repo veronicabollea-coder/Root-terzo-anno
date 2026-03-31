@@ -6,7 +6,7 @@ void graficoRate() {
 
     // --- DATI DI ESEMPIO ---
     const int N = 2;
-    double x[N]     = {9.8, 19.5};        // variabile indipendente
+    double x[N]     = {10.1, 19.8};        // variabile indipendente
     double y[N]     = {2.7, 1.21 }; // variabile misurata
     double ex[N]    = {0, 0};        // errori in x (qui nulli)
     double ey[N]    = {0.3, 0.15 }; // errori verticali
