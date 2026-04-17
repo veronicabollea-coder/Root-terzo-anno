@@ -84,7 +84,29 @@ void fit_monocromatore(){
         71.38,
         57.6,
     };
-    vector<double> err_ua={};
+    vector<double> err_ua={
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+    };
     //
     TCanvas* c1= new TCanvas("c1", "curva di calibrazione monocromatore", 800, 600);
     c1->SetGrid();
@@ -93,11 +115,11 @@ void fit_monocromatore(){
     int len= ua.size();
     //
     //NB: se qualcosa qua non ha errori, al posto di err_chn o err_lambda, mettere nullptr al posto
-    TGraphErrors* gr1= new TGraphErrors(len, chn.data(), ua.data(), err_chn.data(), nullptr);
+    TGraphErrors* gr1= new TGraphErrors(len, chn.data(), ua.data(), err_chn.data(), err_ua.data());
     //
     gr1->SetTitle("Fit picchi monocromatore; canali ; u.a.");
     gr1->SetMarkerStyle(20);
-    gr1->SetMarkerSize(1.2);
+    gr1->SetMarkerSize(0.7);
     gr1->SetLineColor(1);
     gr1->SetMarkerColor(1);
     //eventualmente modifica gli estremi in cui è calcolata la TF1
