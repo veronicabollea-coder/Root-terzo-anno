@@ -117,7 +117,7 @@ void fit_monocromatore(){
     //NB: se qualcosa qua non ha errori, al posto di err_chn o err_lambda, mettere nullptr al posto
     TGraphErrors* gr1= new TGraphErrors(len, chn.data(), ua.data(), err_chn.data(), err_ua.data());
     //
-    gr1->SetTitle("Fit picchi monocromatore; canali ; u.a.");
+    gr1->SetTitle("Picchi monocromatore; canali ; u.a.");
     gr1->SetMarkerStyle(20);
     gr1->SetMarkerSize(0.7);
     gr1->SetLineColor(1);
